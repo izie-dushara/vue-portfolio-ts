@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "GitHub",
+        "link": "https://github.com/izie-dushara",
+        "icon": "pi pi-github"
+    },
+    {
+        "id": 2,
+        "name": "LinkedIn",
+        "link": "https://www.linkedin.com/in/izzul-zahba",
+        "icon": "pi pi-linkedin"
+    },
+    {
+        "id": 3,
+        "name": "E-mail",
+        "link": "mailto:hazimzahba@gmail.com",
+        "icon": "pi pi-send"
+    }
+]

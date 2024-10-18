@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "image": "/images/portfolio/acme-project.jpg",
+        "description": "Simple website to learn how to use TailwindCSS.",
+        "title": "Acme Rocket Simple Website",
+        "links": {
+            "github": "https://github.com/izie-dushara/acme_rockets",
+            "demo": "https://acme-rockets-mal.onrender.com/"
+        }
+    },
+    {
+        "id": 2,
+        "image": "/images/portfolio/stripe-clone.png",
+        "title": "Stripe Landing Page Clone",
+        "description": "Using React useContext for state management to create Menu with Sub-Menu within them.",
+        "links": {
+            "github": "https://github.com/izie-dushara/stripe-landin-clone",
+            "demo": "https://stripe-clone.onrender.com"
+        }
+    },
+    {
+        "id": 3,
+        "image": "/images/portfolio/slider-reviews.png",
+        "description": "Learn how to make a slider with making a review sections.",
+        "title": "Reviews | Auto Slider",
+        "links": {
+            "github": "https://github.com/izie-dushara/slider-project",
+            "demo": "https://reviews-slider.onrender.com/"
+        }
+    },
+    {
+        "id": 4,
+        "image": "/images/portfolio/grocery-bud.png",
+        "description": "Create, Read, Update and Delete grocery list and making the data persistence using the LocalStorage API",
+        "title": "CRUD Grocery List",
+        "links": {
+            "github": "https://github.com/izie-dushara/grocery-bud/tree/main",
+            "demo": "https://grocery-bud-n4ir.onrender.com/"
+        }
+    }
+]

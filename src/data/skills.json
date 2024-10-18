@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "PHP",
+        "subtitle": "Web Development",
+        "icon": "./images/languagesIcon/php.svg"
+    },
+    {
+        "id": 2,
+        "title": "Java",
+        "subtitle": "OOP and Concurrent Programming",
+        "icon": "./images/languagesIcon/java.svg"
+    },
+    {
+        "id": 3,
+        "title": "JavaScript/TypeScript",
+        "subtitle": "Web Development",
+        "icon": "./images/languagesIcon/typescript.svg"
+    },
+    {
+        "id": 4,
+        "title": "SQL",
+        "subtitle": "Database Management",
+        "icon": "./images/languagesIcon/mysql.svg"
+    },
+    {
+        "id": 5,
+        "title": "Python",
+        "subtitle": "Basic",
+        "icon": "./images/languagesIcon/python.svg"
+    },
+    {
+        "id": 6,
+        "title": "C/C++",
+        "subtitle": "Basic",
+        "icon": "./images/languagesIcon/cpp.svg"
+    },
+    {
+        "id": 7,
+        "title": "Golang",
+        "subtitle": "Basic",
+        "icon": "./images/languagesIcon/golang.svg"
+    }
+]
