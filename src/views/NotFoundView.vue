@@ -25,6 +25,7 @@ import NotFoundAnimation from "../animations/NotFoundAnimation.json";
     display: flex;
     flex-direction: column;
     justify-content: center;
+	min-height: calc(100vh - 10rem);
     align-items: center;
     gap: 2rem;
 

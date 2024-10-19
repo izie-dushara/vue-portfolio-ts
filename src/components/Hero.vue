@@ -4,9 +4,9 @@ import { Vue3Lottie } from "vue3-lottie";
 const passions: string[] = [
     "Web Developer",
     "Student",
-	"PHP Enthusiast",
-	"TypeScript Hobbyist",
-    "One Must Imagine Sissyphus Happy",
+    "PHP Enthusiast",
+    "TypeScript Hobbyist",
+    "One Must Imagine Sisyphus Happy",
 ];
 
 const passionIndex = ref<number>(0);
@@ -15,32 +15,42 @@ const characterIndex = ref<number>(0);
 
 const typeWriterText = ref<string | null>("");
 
+const isPausing = ref<boolean>(false);
+
 const updateText = () => {
-    characterIndex.value++;
+    if (!isPausing.value) {
+        characterIndex.value++;
 
-    // console.log(passions[passions.length - 1])
-    if (passions[passionIndex.value] !== passions[passions.length - 1]) {
-        typeWriterText.value = `I am a ${passions[passionIndex.value].slice(
-            0,
-            characterIndex.value
-        )}`;
-    } else {
-        typeWriterText.value = passions[passionIndex.value].slice(
-            0,
-            characterIndex.value
-        );
+        if (passions[passionIndex.value] !== passions[passions.length - 1]) {
+            typeWriterText.value = `I am a ${passions[passionIndex.value].slice(
+                0,
+                characterIndex.value
+            )}`;
+        } else {
+            typeWriterText.value = passions[passionIndex.value].slice(
+                0,
+                characterIndex.value
+            );
+        }
+
+        if (characterIndex.value === passions[passionIndex.value].length) {
+            isPausing.value = true;
+            setTimeout(() => {
+                passionIndex.value++;
+                characterIndex.value = 0;
+                isPausing.value = false;
+				
+				if (passionIndex.value === passions.length) {
+					passionIndex.value = 0;
+				}
+            }, 1000);
+        }
+
+        if (passionIndex.value === passions.length) {
+            passionIndex.value = 0;
+        }
     }
-
-    if (characterIndex.value === passions[passionIndex.value].length) {
-        passionIndex.value++;
-        characterIndex.value = 0;
-    }
-
-    if (passionIndex.value === passions.length) {
-        passionIndex.value = 0;
-    }
-
-    setTimeout(updateText, 300);
+    setTimeout(updateText, isPausing.value ? 1000 : 300);
 };
 onMounted(() => {
     updateText();
